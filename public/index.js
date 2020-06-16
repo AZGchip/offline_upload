@@ -1,6 +1,7 @@
 let transactions = [];
 let myChart;
 
+
 fetch("/api/transaction")
   .then(response => {
     return response.json();
@@ -142,6 +143,7 @@ function sendTransaction(isAdding) {
     nameEl.value = "";
     amountEl.value = "";
   });
+  
 }
 
 document.querySelector("#add-btn").onclick = function() {
